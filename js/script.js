@@ -16,11 +16,11 @@ function makeRandomNumber() {
 	let guess = parseInt(document.getElementById('guess').value)
 
 
-  	// if hour is before noon, display "Good morning"
+  	// if guess is right says correct
 	if (guess == Math.floor(Math.random() * 6) + 1){
 		number = "CORRECT!!!"
 	} 
-	// otherwise, if hour is before 6pm, display "Good afternoon"	
+	//if not says incorrect	
 	else {
 		number = "INCORRECT"
 	}
