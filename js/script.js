@@ -14,15 +14,16 @@ function makeRandomNumber() {
 	
 	// get user input
 	let guess = parseInt(document.getElementById('guess').value)
+  let randomNumber = Math.floor(Math.random() * 6) + 1
 
 
   	// if guess is right says correct
-	if (guess == Math.floor(Math.random() * 6) + 1){
-		number = "CORRECT!!!"
+	if (guess == randomNumber){
+		number = "CORRECT!!!   " + randomNumber + '  is the right number'
 	} 
 	//if not says incorrect	
 	else {
-		number = "INCORRECT"
+		number = "INCORRECT " + '  The correct number is ' + randomNumber + '.'
 	}
 
   // display the results
